@@ -10,6 +10,13 @@ producing a readable report for later thinking.
 It produces the _overall requests number_, _GET vs POST_, _Request
 distribution over time_ and more.
 
+The output will be in
+[Markdown](http://daringfireball.net/projects/markdown/) syntax
+therefore it will be easier to convert it to PDFs with tools like
+[pandoc](http://johnmacfarlane.net/pandoc/) or showing it in a browser
+with plugins like
+[markdown viewer](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer/).
+
 It can analyse as well custom path provided on the command line.
 
 Taking from the comment within the file that will tell you how to run

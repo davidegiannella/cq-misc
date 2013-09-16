@@ -87,6 +87,7 @@ echo "Overall"
 echo
 get=0
 post=0
+set +e
 for f in $@
 do
 	if [ -f $f ]
@@ -97,6 +98,7 @@ do
 		post=$(($post + $b))
 	fi
 done
+set -e
 echo "    $get GET"
 echo "    $post POST"
 tot=$(($get + $post))

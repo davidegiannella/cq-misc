@@ -36,8 +36,8 @@ it:
 EditMode.js
 ===========
 
-Often on CQ development you have to understand in javascript if you're
-on author, publish or some sub-modes of author.
+Often on CQ development you have to understand in javascript what's
+your current WCM mode: edit, preview, design or disabled.
 
 CQ helps you with the
 [CQ.WCM](http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.WCM)

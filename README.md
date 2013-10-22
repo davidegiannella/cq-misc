@@ -33,3 +33,29 @@ it:
     # you can save the output by a simple piping
     #    ./analyse-access.sh access.log.2013-* | tee yr2013.md
 
+EditMode.js
+===========
+
+Often on CQ development you have to understand in javascript if you're
+on author, publish or some sub-modes of author.
+
+CQ helps you with the
+[CQ.WCM](http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.WCM)
+object but it won't be (and should not) available on publish.
+
+The object will help you on a simple wrapping around and can be used
+straight in your custom clientlibs when needed.
+
+Taking from the comment within the file itself
+
+    * Simple javascript object meant to be used within a CQ development to understand on a Javascript side which my Edit Mode is.
+    * 
+    * USAGE:
+    *      1) Drop the file in your clientlib
+    *      2) Reference it in your js.txt
+    *
+    *      You can now use it as it will automatically create an "editmode" object
+    *              (editmode.isEditMode())    ? "I'm Authoring"   : ""
+    *              (editmode.isPreviewMode()) ? "I'm in Preview"  : ""
+    *              (editmode.isDesignMode())  ? "I'm in Design"   : ""
+    *              (editmode.isDisabled())    ? "I'm in Disabled" : ""

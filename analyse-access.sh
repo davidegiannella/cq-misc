@@ -12,7 +12,7 @@ set -e
 # you can save the output by a simple piping
 #    ./analyse-access.sh access.log.2013-* | tee yr2013.md
 
-BN=`basename $0`
+BN="$(basename $0).XXXX"
 
 if [ $# -lt 1 ] 
 then
